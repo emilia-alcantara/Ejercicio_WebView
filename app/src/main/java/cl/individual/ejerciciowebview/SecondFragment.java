@@ -3,6 +3,7 @@ package cl.individual.ejerciciowebview;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -65,15 +66,28 @@ public class SecondFragment extends Fragment {
         // Inflate the layout for this fragment
         binding = FragmentSecondBinding.inflate(getLayoutInflater(),container,false);
         initWebView();
+        initListeners();
 
         return binding.getRoot();
     }
 
+
+
     private void initWebView() {
 
-        WebView myWebView = (WebView) binding.webView;
+        WebView myWebView = (WebView) binding.vistaPagWeb;
 
-        myWebView.loadUrl("");
+        myWebView.loadUrl(mParam1);
+    }
+
+    private void initListeners() {
+        binding.btnFinalizar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fm = getActivity().getSupportFragmentManager();
+                fm.popBackStack();
+            }
+        });
 
     }
 }

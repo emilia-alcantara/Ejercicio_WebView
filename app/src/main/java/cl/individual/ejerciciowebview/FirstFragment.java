@@ -74,7 +74,7 @@ public class FirstFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 String url = binding.edTxtUrl.getText().toString();
-                SecondFragment secondFragment = SecondFragment.newInstance("","");
+                SecondFragment secondFragment = SecondFragment.newInstance(url,"");
                 FragmentTransaction transaction = getActivity()
                         .getSupportFragmentManager()
                         .beginTransaction()

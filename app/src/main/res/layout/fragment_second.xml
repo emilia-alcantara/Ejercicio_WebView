@@ -8,19 +8,22 @@
     tools:context=".SecondFragment">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnFinalizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
+        android:backgroundTint="#63B6C1"
         android:text="Finalizar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/webView"
-        app:layout_constraintStart_toStartOf="@+id/webView"
-        app:layout_constraintTop_toBottomOf="@+id/webView"
+        app:layout_constraintEnd_toEndOf="@+id/vistaPagWeb"
+        app:layout_constraintStart_toStartOf="@+id/vistaPagWeb"
+        app:layout_constraintTop_toBottomOf="@+id/vistaPagWeb"
         app:layout_constraintVertical_bias="0.625" />
 
     <WebView
-        android:id="@+id/webView"
+        android:id="@+id/vistaPagWeb"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"

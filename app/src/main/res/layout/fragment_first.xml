@@ -9,22 +9,23 @@
 
     <TextView
         android:id="@+id/txtTituloFirstFrag"
-        android:layout_width="179dp"
-        android:layout_height="59dp"
+        android:layout_width="245dp"
+        android:layout_height="91dp"
+        android:fontFamily="@font/farro"
         android:gravity="center"
         android:text="Hola, ingresa el URL de la página que quieres ver y luego presiona el botón"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintVertical_bias="0.209" />
 
     <EditText
         android:id="@+id/edTxtUrl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
         android:gravity="center"
         android:hint="Ingresa URL"
@@ -39,6 +40,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
+        android:backgroundTint="#63B6C1"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         android:text="Ver página web"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
