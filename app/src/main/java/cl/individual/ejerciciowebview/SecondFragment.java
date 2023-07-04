@@ -71,8 +71,6 @@ public class SecondFragment extends Fragment {
         return binding.getRoot();
     }
 
-
-
     private void initWebView() {
 
         WebView myWebView = (WebView) binding.vistaPagWeb;

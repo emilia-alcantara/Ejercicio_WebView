@@ -82,10 +82,6 @@ public class FirstFragment extends Fragment {
                 transaction.addToBackStack("first to second");
                 transaction.commit();
 
-             //   WebView myWebView = (WebView) binding.;
-
-             //   myWebView.loadUrl("");
-
             }
         });
     }
